@@ -1,0 +1,38 @@
+{
+  "example": true,
+  "shop": {
+    "name": "Big Yakfa Business",
+    "welcomeTitle": "Bienvenue chez Big Yakfa Business",
+    "welcome": "Installe-toi, regarde nos produits à ton rythme. Une question ? On est là pour toi sur WhatsApp.",
+    "whatsapp": "243000000000",
+    "currency": "$",
+    "hours": "Réponse sur WhatsApp tous les jours de 8 h à 20 h."
+  },
+  "club": {
+    "title": "Rejoins le Club Yakfa",
+    "text": "Les clients fidèles passent en premier.",
+    "perks": [
+      "Les nouveautés avant tout le monde",
+      "Des avantages réservés aux membres",
+      "Un petit geste pour ton anniversaire"
+    ],
+    "button": "Rejoindre le club sur WhatsApp",
+    "message": "Bonjour, je veux rejoindre le Club Yakfa."
+  },
+  "services": [
+    { "title": "Livraison à domicile", "text": "Livraison sous 24 h dans la ville. Frais communiqués avant la commande." },
+    { "title": "Paiement mobile money", "text": "Paie par mobile money à la confirmation de la commande." },
+    { "title": "Retrait sur place", "text": "Passe récupérer ton article, sur rendez-vous." },
+    { "title": "Commande sur mesure", "text": "Un produit introuvable ici ? Écris-nous, on le cherche pour toi." }
+  ],
+  "products": [
+    { "id": "p1", "name": "Montre connectée Série 7", "cat": "Téléphonie", "price": 35, "stock": 12, "hue": 205, "photo": "", "description": "Notifications, suivi du sommeil et du sport, écran tactile." },
+    { "id": "p2", "name": "Écouteurs sans fil", "cat": "Téléphonie", "price": 18, "stock": 3, "hue": 265, "photo": "", "description": "Bluetooth, boîtier de charge, micro intégré." },
+    { "id": "p3", "name": "Chargeur rapide 30 W", "cat": "Téléphonie", "price": 9, "stock": 0, "hue": 20, "photo": "", "description": "Charge rapide, compatible la plupart des téléphones." },
+    { "id": "p4", "name": "Sac à main cuir synthétique", "cat": "Mode", "price": 28, "stock": 6, "hue": 340, "photo": "", "description": "Plusieurs compartiments, bandoulière réglable." },
+    { "id": "p5", "name": "Baskets blanches unisexe", "cat": "Mode", "price": 32, "stock": 0, "hue": 160, "photo": "", "description": "Semelle confortable, du 38 au 45." },
+    { "id": "p6", "name": "Sérum visage vitamine C", "cat": "Beauté", "price": 14, "stock": 20, "hue": 40, "photo": "", "description": "Pour un teint plus lumineux, flacon de 30 ml." },
+    { "id": "p7", "name": "Palette de maquillage 18 teintes", "cat": "Beauté", "price": 12, "stock": 2, "hue": 310, "photo": "", "description": "Fards mats et brillants, pinceau inclus." },
+    { "id": "p8", "name": "Blender portable rechargeable", "cat": "Maison", "price": 22, "stock": 8, "hue": 95, "photo": "", "description": "Pour smoothies partout, recharge par USB." }
+  ]
+}
