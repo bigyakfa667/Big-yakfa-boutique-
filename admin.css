@@ -1,0 +1,46 @@
+/* Espace administrateur : réutilise les couleurs et polices de style.css */
+#login { display: flex; flex-direction: column; gap: 14px; padding-top: 40px; max-width: 420px; margin-inline: auto; }
+#login h1 { font-size: 28px; }
+.hint { margin: 0; color: var(--muted); font-size: 14px; }
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.stack.tight { gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.field > span { color: var(--muted); font-weight: 500; }
+.msg { margin: 0; padding: 10px 12px; border-radius: 8px; background: var(--low-bg); color: var(--low-fg); font-size: 14px; overflow-wrap: anywhere; }
+.msg.good { background: var(--ok-bg); color: var(--ok-fg); }
+
+.adm-top { padding-block: 22px 14px; display: flex; flex-direction: column; gap: 12px; }
+.adm-top h1 { font-size: 26px; }
+.adm-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.plist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.prow { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px; display: grid; grid-template-columns: 64px 1fr; gap: 10px 12px; }
+.prow .thumb { width: 64px; height: 64px; border-radius: 10px; overflow: hidden; display: grid; place-items: center; position: relative;
+  background: hsl(var(--h, 150) 42% var(--tile-bg-l)); color: hsl(var(--h, 150) 42% var(--tile-fg-l)); font: 700 28px var(--font-display); }
+.prow .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prow .meta { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.prow .nm { font: 500 16px/1.2 var(--font-display); overflow-wrap: anywhere; }
+.prow .sub { color: var(--muted); font-size: 13px; }
+.prow .controls { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.stepper { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.stepper button { width: 44px; min-height: 40px; border: 0; background: transparent; color: var(--fg); font: 700 20px var(--font-body); cursor: pointer; }
+.stepper output { min-width: 40px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font: 700 12px var(--font-body); }
+.pill.ok { background: var(--ok-bg); color: var(--ok-fg); }
+.pill.low { background: var(--low-bg); color: var(--low-fg); }
+.pill.out { background: var(--out-bg); color: var(--out-fg); }
+
+dialog { width: min(560px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow-y: auto; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); color: var(--fg); padding: 18px; }
+dialog::backdrop { background: rgb(0 0 0 / .55); }
+dialog h2 { font-size: 22px; }
+dialog h3 { font-size: 17px; margin-top: 8px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.row-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.row-btns .btn { flex: 1 1 140px; }
+.photo-row { display: flex; align-items: center; gap: 14px; }
+.photo-prev { width: 96px; height: 96px; border-radius: 12px; overflow: hidden; flex: none; display: grid; place-items: center; background: var(--out-bg); color: var(--muted); font-size: 12px; text-align: center; }
+.photo-prev img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.svc-edit { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+label.btn { cursor: pointer; }
+
+/* un élément marqué « caché » doit vraiment l'être, même avec display:flex */
+[hidden] { display: none !important; }

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Big Yakfa Business</title>
+<meta name="description" content="Catalogue Big Yakfa Business : produits, prix et disponibilités. Commande directement sur WhatsApp.">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="logo.svg" alt="Logo Big Yakfa Business" width="92" height="92">
+      <h1 class="shop" id="shopName">Big Yakfa Business</h1>
+    </div>
+    <div class="welcome">
+      <h2 id="welcomeTitle"></h2>
+      <p id="welcomeText"></p>
+    </div>
+    <p class="example-note" id="exampleNote" hidden>Exemple : les produits, prix et services ci-dessous sont fictifs.</p>
+    <a class="btn wide" id="waMain" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.47 15.03L2 22l5.1-1.34A9.9 9.9 0 1 0 12.04 2Zm5.8 14.07c-.25.7-1.45 1.34-2 1.4-.52.06-1 .25-3.36-.7-2.84-1.13-4.64-4.04-4.78-4.23-.14-.19-1.14-1.52-1.14-2.9s.72-2.06.98-2.34c.25-.28.55-.35.74-.35h.53c.17 0 .4-.06.62.48.23.55.78 1.9.85 2.04.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.17-.19.7-.82.89-1.1.19-.28.37-.23.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.18 1.38Z"/></svg>
+      Écrire sur WhatsApp
+    </a>
+  </header>
+
+  <div class="bar">
+    <input class="search" id="q" type="search" placeholder="Chercher un produit" autocomplete="off" aria-label="Chercher un produit">
+    <div class="chips" id="chips" role="group" aria-label="Filtres"></div>
+  </div>
+
+  <p class="count" id="count" aria-live="polite"></p>
+  <main class="grid" id="grid"><p class="empty">Chargement du catalogue…</p></main>
+
+  <section class="club" id="club" aria-labelledby="clubTitle" hidden>
+    <h2 id="clubTitle"></h2>
+    <p id="clubText"></p>
+    <ul class="perks" id="clubPerks"></ul>
+    <a class="btn wide" id="waClub" href="#" target="_blank" rel="noopener"></a>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="svcTitle" hidden>
+    <h2 id="svcTitle">Services</h2>
+    <ul class="svc-list" id="svcList"></ul>
+  </section>
+
+  <footer class="foot">
+    <p id="hours"></p>
+    <a class="btn ghost wide" id="waFoot" href="#" target="_blank" rel="noopener">Une question ? Écris-nous</a>
+  </footer>
+</div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
